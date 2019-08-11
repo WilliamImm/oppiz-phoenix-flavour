@@ -5,6 +5,7 @@ module.exports = {
     author: `Shadea`,
   },
   plugins: [
+    `gatsby-plugin-catch-links`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
