@@ -22,26 +22,38 @@ exports.onCreateNode = ({ node, getNode, actions}) => {
 // Now actually create the pages
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
+  // We want slug (link to where page is), plus the title (for displaying on previous/next pages)
   const result = await graphql(`
     {
-      allMarkdownRemark {
+      allMarkdownRemark(sort: {fields: frontmatter___title}) {
         edges {
           node {
             fields {
               slug
+            }
+            frontmatter {
+              title
             }
           }
         }
       }
     }
   `)
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+
+  const steps = result.data.allMarkdownRemark.edges
+  steps.forEach((step, index) => {
+    // save previous & next steps if they exist
+    const next = index === steps.length - 1 ? null : steps[index + 1].node
+    const previous = index === 0 ? null : steps[index - 1].node
+
     createPage({
-      path: node.fields.slug,
+      path: step.node.fields.slug,
       component: path.resolve(`./src/templates/guide-step.js`),
       context: {
         // allows access to slug as GraphQL variable
-        slug: node.fields.slug,
+        slug: step.node.fields.slug,
+        previous,
+        next,
       },
     })
   })
