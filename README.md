@@ -12,4 +12,4 @@ That being said, this is most certainly possible.
 
 ## Live Instance
 
-[Currently hosted on Surge](http://fire-chicken.surge.sh/core/prep/).
+[Currently hosted on Surge](http://fire-chicken.surge.sh/guide/core/prep/).
