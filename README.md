@@ -9,3 +9,7 @@ The site is able to render guide steps in an orderly fashion, though content has
 Would like to implement a sidebar for the guide steps, as well as implement a FOMOD installation gallery. Plus would need to design for multiple modules.
 
 That being said, this is most certainly possible.
+
+## Live Instance
+
+[Currently hosted on Surge](http://fire-chicken.surge.sh/core/prep/).
