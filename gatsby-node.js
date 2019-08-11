@@ -52,18 +52,30 @@ exports.createPages = async ({ graphql, actions }) => {
   `)
 
   let nextForModule = function(step, steps, index) {
+    // end of step list obviously means no more steps
     if (index !== steps.length - 1) {
-      let nextStep = steps[index + 1].node;
-      return nextStep.fields.module === step.node.fields.module ? nextStep : null;
+      // if the "next step" is from a different module, just return a null reference to avoid accidental crossover
+      let nextStep = steps[index + 1].node
+      return nextStep.fields.module === step.node.fields.module ? nextStep : null
     }
     return null
+  }
+
+  let previousForModule = function(step, steps, index) {
+    // start of step list means no previous step
+    if (index !== 0) {
+      // if the "previous step" is from a different module, just return a null reference to avoid accidental crossover
+      let previousStep = steps[index - 1].node
+      return previousStep.fields.module === step.node.fields.module ? previousStep : null
+    }
+    return null;
   }
 
   const steps = result.data.allMarkdownRemark.edges
   steps.forEach((step, index) => {
     // save previous & next steps if they exist for the module
-    const next = nextForModule(step, steps, index);
-    const previous = index === 0 ? null : steps[index - 1].node
+    const next = nextForModule(step, steps, index)
+    const previous = previousForModule(step, steps, index)
 
     createPage({
       path: step.node.fields.slug,
