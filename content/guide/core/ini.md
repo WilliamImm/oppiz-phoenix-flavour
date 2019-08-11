@@ -1,11 +1,9 @@
 ---
-title: 04. INI Files
+title: INI Files
 step: 4
 ---
 
-# STEP 4 - INI FILES
-
-### 4.1 Generate Fresh INI Files
+## 4.1 Generate Fresh INI Files
 
 - Locate your `C:\Users\%USERNAME%\Documents\My Games\Skyrim Special Edition` folder. It contains your save games in the **saves** folder and your INIs as loose files.
 - If you do have old save games you’d like to keep, **back them up now –** then delete the entire **Skyrim Special Edition** folder.
@@ -17,13 +15,13 @@ step: 4
 
 ![Regenerate INIs](/media/core/step_04/regenerate_inis.png "Regenerate INis"){.img-fluid .mx-auto .d-block}
 
-### 4.2 Install BethINI
+## 4.2 Install BethINI
 
 - Download the latest version of [BethINI](https://www.nexusmods.com/skyrimspecialedition/mods/4875) from the Skyrim Nexus.
 - Extract the downloaded archive with all files to `{Your Modding Folder}\Tools`.
 - Double-click **BethINI.exe**.
 
-### 4.3 BethINI - Setup
+## 4.3 BethINI - Setup
 
 - After starting BethINI, you will be prompted with a window asking you to choose your game.
 - Select *Skyrim Special Edition* from the drop-down menu.
@@ -35,7 +33,7 @@ step: 4
 
 ![BethINI Setup Tab](/media/core/step_04/bethini-setup-1.png "BethINI Setup Tab"){.img-fluid .mx-auto .d-block}
 
-### 4.4 BethINI - Basic
+## 4.4 BethINI - Basic
 
 Continue with the second tab, **Basic**.
 
@@ -53,7 +51,7 @@ Continue with the second tab, **Basic**.
 <div class="alert alert-info" role="alert">
 <p><i class="fas fa-info-circle"></i> Unless you’re going for a maximum graphics screen-archery modding setup, you should not select the <b>Ultra</b> preset. For high-end PC owners I would recommend the <b>High</b> option and everyone else might want to select <b>Medium</b>. If your PC is already struggling with vanilla Skyrim go for the <b>Low</b> option.</p></div>
 
-### 4.5 BethINI - Interface
+## 4.5 BethINI - Interface
 
 Continue with the fifth tab, **Interface**.
 
@@ -64,7 +62,7 @@ Continue with the fifth tab, **Interface**.
 
 ![BethINI Interface Tab](/media/core/step_04/bethini-setup-3.png "BethINI Interface Tab"){.img-fluid .mx-auto .d-block}
 
-### 4.6 BethINI - Detail
+## 4.6 BethINI - Detail
 
 Continue with the sixth tab, **Detail**.
 
@@ -79,13 +77,13 @@ Continue with the sixth tab, **Detail**.
 
 ![BethINI Detail Tab](/media/core/step_04/bethini-setup-4.png "BethINI Detail Tab"){.img-fluid .mx-auto .d-block}
 
-### 4.7 BethINI - View Distance
+## 4.7 BethINI - View Distance
 
 Continue with the seventh tab, **View Distance**.
 
 - **Grass Fade**: 15000 - *or higher*
 
-### 4.8 BethINI - Custom, Pt 1
+## 4.8 BethINI - Custom, Pt 1
 
 Continue with the ninth tab, **Custom**.
 
@@ -105,7 +103,7 @@ Continue with the ninth tab, **Custom**.
 <div class="alert alert-info" role="alert">
 <p><i class="fas fa-info-circle"></i> This should fix the “black crush” that some people are experiencing in SSE.</p></div>
 
-### 4.9 BethINI - Custom, Pt 2
+## 4.9 BethINI - Custom, Pt 2
 
 - Still in the **Custom** tab, select the following:
   - Section: *General*.
@@ -122,7 +120,7 @@ Continue with the ninth tab, **Custom**.
 <div class="alert alert-info" role="alert">
 <p><i class="fas fa-info-circle"></i> This will disable the <b>MODS</b> entry in the ingame pause menu. You should not be using the in-built Bethesda mod manager or Beth.net platform anyway.</p></div>
 
-### 4.10 BethINI - Final Step
+## 4.10 BethINI - Final Step
 
 Return to the second tab, **Basic**, and click *Save and Exit*.
 
