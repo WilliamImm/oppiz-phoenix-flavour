@@ -34,7 +34,7 @@ Throughout the guide I will refer to this folder as `{Your Modding Folder}`.
 
 ---
 
-![Modding Folder](/media/core/step_01/modding_folder.png "Modding Folder"){.img-fluid .mx-auto .d-block}
+![Modding Folder](modding_folder.png "Modding Folder"){.img-fluid .mx-auto .d-block}
 
 ## 1.4 General Tips
 
