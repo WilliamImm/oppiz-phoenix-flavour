@@ -8,20 +8,20 @@ const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
 // Process and create paths for Markdown pages
-exports.onCreateNode = ({ node, getNode, actions}) => {
+exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
   if (node.internal.type === `MarkdownRemark`) {
-    const slug = createFilePath({ node, getNode, basePath: `content`})
+    const slug = createFilePath({ node, getNode, basePath: `content` })
     createNodeField({
       node,
-      name: 'slug',
+      name: "slug",
       value: slug,
     })
     // Extract module name from path, used for file seperation
-    const module = /guide\/(\w+)/.exec(slug)[1];
+    const module = /guide\/(\w+)/.exec(slug)[1]
     createNodeField({
       node,
-      name: 'module',
+      name: "module",
       value: module,
     })
   }
@@ -32,10 +32,13 @@ exports.createPages = async ({ graphql, actions }) => {
   // We want slug (link to where page is), plus the title (for displaying on previous/next pages)
   const result = await graphql(`
     {
-      allMarkdownRemark(sort: {fields: frontmatter___step}) {
+      allMarkdownRemark(
+        sort: { fields: [fields___module, frontmatter___step] }
+      ) {
         edges {
           node {
             fields {
+              module
               slug
             }
             frontmatter {
@@ -48,10 +51,18 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `)
 
+  let nextForModule = function(step, steps, index) {
+    if (index !== steps.length - 1) {
+      let nextStep = steps[index + 1].node;
+      return nextStep.fields.module === step.node.fields.module ? nextStep : null;
+    }
+    return null
+  }
+
   const steps = result.data.allMarkdownRemark.edges
   steps.forEach((step, index) => {
-    // save previous & next steps if they exist
-    const next = index === steps.length - 1 ? null : steps[index + 1].node
+    // save previous & next steps if they exist for the module
+    const next = nextForModule(step, steps, index);
     const previous = index === 0 ? null : steps[index - 1].node
 
     createPage({
