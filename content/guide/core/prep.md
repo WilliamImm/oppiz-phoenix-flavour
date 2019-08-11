@@ -20,7 +20,7 @@ By default file extensions - like EXE, PNG or ESP - are hidden in the Windows Ex
 
 ---
 
-![File Extensions Visible](/media/core/step_01/file_extensions_visible.png "File Extensions Visible"){.img-fluid .mx-auto .d-block}
+![File Extensions Visible](file_extensions_visible.png "File Extensions Visible"){.img-fluid .mx-auto .d-block}
 
 ## 1.3 Your Modding Folder
 
