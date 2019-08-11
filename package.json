@@ -7,6 +7,7 @@
   "dependencies": {
     "gatsby": "^2.13.57",
     "gatsby-image": "^2.2.8",
+    "gatsby-plugin-catch-links": "^2.1.2",
     "gatsby-plugin-manifest": "^2.2.5",
     "gatsby-plugin-offline": "^2.2.5",
     "gatsby-plugin-react-helmet": "^3.1.3",
@@ -16,6 +17,7 @@
     "gatsby-source-filesystem": "^2.1.9",
     "gatsby-transformer-remark": "^2.6.12",
     "gatsby-transformer-sharp": "^2.2.6",
+    "luminous-lightbox": "^2.3.2",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
