@@ -11,11 +11,18 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 exports.onCreateNode = ({ node, getNode, actions}) => {
   const { createNodeField } = actions
   if (node.internal.type === `MarkdownRemark`) {
-    const slug = createFilePath({ node, getNode, basePath: `content\guide`})
+    const slug = createFilePath({ node, getNode, basePath: `content`})
     createNodeField({
       node,
       name: 'slug',
       value: slug,
+    })
+    // Extract module name from path, used for file seperation
+    const module = /guide\/(\w+)/.exec(slug)[1];
+    createNodeField({
+      node,
+      name: 'module',
+      value: module,
     })
   }
 }
