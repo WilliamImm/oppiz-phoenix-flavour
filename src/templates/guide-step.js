@@ -18,12 +18,12 @@ export default ({ data, pageContext }) => {
       <ul class="pagniation">
           {previous && (
             <li class="page-item">
-              <Link to={previous.fields.slug} rel="prev">{previous.frontmatter.title}</Link>
+              <Link to={previous.fields.slug} rel="prev">{previous.frontmatter.step} - {previous.frontmatter.title}</Link>
             </li>
           )}
           {next && (
             <li class="page-item">
-              <Link to={next.fields.slug} rel="next">{next.frontmatter.title}</Link>
+              <Link to={next.fields.slug} rel="next">{next.frontmatter.step} - {next.frontmatter.title}</Link>
             </li>
           )}
       </ul>
