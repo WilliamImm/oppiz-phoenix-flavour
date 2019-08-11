@@ -13,7 +13,7 @@ export default ({ data, pageContext }) => {
   return (
     <Layout>
       <SEO title={displayTitle} />
-      <h1>Step {displayTitle}</h1>
+      <h1>STEP {displayTitle.toUpperCase()}</h1>
       <article dangerouslySetInnerHTML={{ __html: step.html }} />
       <ul class="pagniation">
           {previous && (
