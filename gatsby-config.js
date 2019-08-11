@@ -33,7 +33,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `The Phoenix Flavour`,
-        short_name: `PhoenixFlavour`,
+        short_name: `Phoenix Flavour`,
         start_url: `/`,
         background_color: `#dbdbdb`,
         theme_color: `#557287`,
