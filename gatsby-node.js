@@ -56,7 +56,9 @@ exports.createPages = async ({ graphql, actions }) => {
     if (index !== steps.length - 1) {
       // if the "next step" is from a different module, just return a null reference to avoid accidental crossover
       let nextStep = steps[index + 1].node
-      return nextStep.fields.module === step.node.fields.module ? nextStep : null
+      return nextStep.fields.module === step.node.fields.module
+        ? nextStep
+        : null
     }
     return null
   }
@@ -66,9 +68,11 @@ exports.createPages = async ({ graphql, actions }) => {
     if (index !== 0) {
       // if the "previous step" is from a different module, just return a null reference to avoid accidental crossover
       let previousStep = steps[index - 1].node
-      return previousStep.fields.module === step.node.fields.module ? previousStep : null
+      return previousStep.fields.module === step.node.fields.module
+        ? previousStep
+        : null
     }
-    return null;
+    return null
   }
 
   const steps = result.data.allMarkdownRemark.edges

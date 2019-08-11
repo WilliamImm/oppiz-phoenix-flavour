@@ -2,6 +2,7 @@
 title: The Creation Kit
 step: 3
 ---
+
 Next we are going to install Bethesda’s official modding tool, the **Creation Kit**, or CK for short. It is important to note that – just like the game itself – the CK was updated for the 64bit engine and is now commonly referred to as CK 2.0 or CK64.
 
 Additionally, it can no longer be acquired directly from Steam but must be downloaded via the Bethesda Launcher which in turn unfortunately requires a Bethesda account.
@@ -9,8 +10,8 @@ Additionally, it can no longer be acquired directly from Steam but must be downl
 ## 3.1 Download
 
 - Go to [Bethesda.net](https://bethesda.net/en/dashboard), the official website.
-- Scroll all the way down to the footer (bottom of the page). 
-- Click the *Download* button in the **Bethesda Launcher** section.
+- Scroll all the way down to the footer (bottom of the page).
+- Click the _Download_ button in the **Bethesda Launcher** section.
 - Double-click the downloaded executable.
 
 ---
@@ -34,7 +35,7 @@ Additionally, it can no longer be acquired directly from Steam but must be downl
 
 To be able to better control when the Creation Kit updates, disable automatic updates.
 
-- Go to *Game Options* and toggle off **Auto Update**.
+- Go to _Game Options_ and toggle off **Auto Update**.
 - Close the Bethesda Launcher.
 
 ---
@@ -43,7 +44,7 @@ To be able to better control when the Creation Kit updates, disable automatic up
 
 ## 3.4 Roll Back To Previous Version
 
-The author of CK Fixes (an essential mod for doing literally anything in the Creation Kit) has not updated their mod for the latest version of the CK (and does not intend to do so). For that reason we will stick with the previous version of the Creation Kit which still works with CK Fixes. 
+The author of CK Fixes (an essential mod for doing literally anything in the Creation Kit) has not updated their mod for the latest version of the CK (and does not intend to do so). For that reason we will stick with the previous version of the Creation Kit which still works with CK Fixes.
 
 - Download the executable of the previous version [here](https://mega.nz/#!mJ8i3IzL!GVxaRhXC7N85kHgMqCkirGPJBdy-mUGe-2WrLrNAuBc).
 - Extract it into your root folder and overwrite.

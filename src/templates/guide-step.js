@@ -40,7 +40,7 @@ class GuideStepTemplate extends React.Component {
 
   // enable Luminous on images
   componentDidMount() {
-    document.querySelectorAll(".gatsby-resp-image-link").forEach((image) => {
+    document.querySelectorAll(".gatsby-resp-image-link").forEach(image => {
       new Luminous(image)
     })
   }

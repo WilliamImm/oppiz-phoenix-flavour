@@ -2,6 +2,7 @@
 title: Preperations
 step: 1
 ---
+
 ## 1.1 Recommended Hardware
 
 - processor with high single core performance (3.2GHz or more)
@@ -30,7 +31,7 @@ step: 1
 
 Before we touch anything related to visuals, we should ensure your monitor’s brightness and gamma settings are correct.
 
-Now assuming you have your monitor set to your preferred settings (in my case that is 60Hz and 1920×1080, the native resolution), you might want to adjust brightness / gamma either through your graphics card (*Control Panel > NVIDIA Control Panel > Adjust Desktop Color Settings*) or Windows’ in-built calibration tool (*Control Panel > Colour Management > Advanced > Calibrate display*).
+Now assuming you have your monitor set to your preferred settings (in my case that is 60Hz and 1920×1080, the native resolution), you might want to adjust brightness / gamma either through your graphics card (_Control Panel > NVIDIA Control Panel > Adjust Desktop Color Settings_) or Windows’ in-built calibration tool (_Control Panel > Colour Management > Advanced > Calibrate display_).
 
 To help you find the sweet spot for your monitor, check out these resources:
 
@@ -45,14 +46,14 @@ To help you find the sweet spot for your monitor, check out these resources:
 
 It is recommend that you ensure **your monitor’s dynamic range is set to Full** if your monitor is connected via DisplayPort or HDMI. [Here are instructions for NVIDIA and AMD](https://pcmonitors.info/articles/correcting-hdmi-colour-on-nvidia-and-amd-gpus/).
 
-(I actually had mine set to *Limited* for years and found that I was so used to it that setting it to *Full* only irritated me. Eventually I went back to *Limited* with no regrets. Your mileage may vary.)
+(I actually had mine set to _Limited_ for years and found that I was so used to it that setting it to _Full_ only irritated me. Eventually I went back to _Limited_ with no regrets. Your mileage may vary.)
 
 ## 1.4 New Profile
 
 To preserve your current **CORE** installation as it is, we are going to copy its profile into a new instance for the **VISUALS** module of this guide.
 
 - In Mod Organizer 2, bring up the **Profiles** window by clicking the ID Card icon (top left).
-- Select your **The Phoenix Flavour – Core** profile and select *Copy*.
+- Select your **The Phoenix Flavour – Core** profile and select _Copy_.
 - Name your new profile **The Phoenix Flavour – Visuals**. Then hit OK.
 - Select your new profile in the list and make sure both options at the bottom are ticked.
 - Close the **Profiles** window.
@@ -63,11 +64,11 @@ To preserve your current **CORE** installation as it is, we are going to copy it
 
 - Download the VISUALS – MO2 Separators from [the guide’s mod page](https://www.nexusmods.com/skyrimspecialedition/mods/14223).
 - Open the archive.
-- Move all folders ending on **_separator** to `Mod Organizer 2\mods`.
+- Move all folders ending on **\_separator** to `Mod Organizer 2\mods`.
 - Refresh (F5) Mod Organizer 2 and sort them as follows:
-  - *DLC: Dawnguard*
-  - *DLC: HearthFires*
-  - *DLC: Dragonborn*
+  - _DLC: Dawnguard_
+  - _DLC: HearthFires_
+  - _DLC: Dragonborn_
   - 01 ESSENTIAL MODS
   - 02 INTERFACE
   - 03 FIXES
@@ -83,11 +84,10 @@ To preserve your current **CORE** installation as it is, we are going to copy it
   - **13 CLUTTER**
   - **14 APPEARANCE**
   - **15 CREATURES**
-  - **16 CLOTHING  & JEWELLERY**
+  - **16 CLOTHING & JEWELLERY**
   - **17 WEAPONS & ARMOR**
   - **18 VISUAL FX**
   - **19 ENB ADDONS**
   - 31 UTILITIES
   - 32 CONFLICT RESOLUTION
   - 33 PATCHER OUTPUT
-

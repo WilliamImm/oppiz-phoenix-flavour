@@ -24,10 +24,10 @@ step: 4
 ## 4.3 BethINI - Setup
 
 - After starting BethINI, you will be prompted with a window asking you to choose your game.
-- Select *Skyrim Special Edition* from the drop-down menu.
+- Select _Skyrim Special Edition_ from the drop-down menu.
 - Once the BethINI window has come up, go to the first tab – **Setup**.
-- Disregard the error under *Mod Organizer*. BethINI can’t find MO2 because we haven’t installed it yet.
-- Everything should be configured correctly there, but it’s always a good idea to double-check that *Game Path* and *INI Path* point to the correct locations – that’s your **root** and **INI** folder respectively.
+- Disregard the error under _Mod Organizer_. BethINI can’t find MO2 because we haven’t installed it yet.
+- Everything should be configured correctly there, but it’s always a good idea to double-check that _Game Path_ and _INI Path_ point to the correct locations – that’s your **root** and **INI** folder respectively.
 
 ---
 
@@ -66,11 +66,11 @@ Continue with the fifth tab, **Interface**.
 
 Continue with the sixth tab, **Detail**.
 
-- **Godrays:** I recommend setting them to *None*, they don’t look great and eat frames for breakfast.
+- **Godrays:** I recommend setting them to _None_, they don’t look great and eat frames for breakfast.
 - **Field of View:** Increase this if you prefer a wider FoV.
 - **Lens Flare:** Matter of taste. Personally I disable this.
 - **Anamorphic Lens Flare**: Looks ugly, recommended to be turned off.
-- **Ambient Occlusion**: Recommended to set this to *None* in favour of ENB AO.
+- **Ambient Occlusion**: Recommended to set this to _None_ in favour of ENB AO.
 - **Shadow Bias:** Set to 0.47 (helps hide ugly pyramid-shapes in snowy regions).
 
 ---
@@ -81,15 +81,15 @@ Continue with the sixth tab, **Detail**.
 
 Continue with the seventh tab, **View Distance**.
 
-- **Grass Fade**: 15000 - *or higher*
+- **Grass Fade**: 15000 - _or higher_
 
 ## 4.8 BethINI - Custom, Pt 1
 
 Continue with the ninth tab, **Custom**.
 
 - Go to the **Custom** tab.
-- Select the following: 
-  - Section: *Display*.
+- Select the following:
+  - Section: _Display_.
   - Setting: `fGlobalContrastBoost`.
 - Change the value to `-0.1800`.
 - Click **Save**.
@@ -106,7 +106,7 @@ Continue with the ninth tab, **Custom**.
 ## 4.9 BethINI - Custom, Pt 2
 
 - Still in the **Custom** tab, select the following:
-  - Section: *General*.
+  - Section: _General_.
   - Setting: `bModManagerMenuEnabled`
 - Change the value to `0`.
 - Click **Save**.
@@ -122,5 +122,4 @@ Continue with the ninth tab, **Custom**.
 
 ## 4.10 BethINI - Final Step
 
-Return to the second tab, **Basic**, and click *Save and Exit*.
-
+Return to the second tab, **Basic**, and click _Save and Exit_.

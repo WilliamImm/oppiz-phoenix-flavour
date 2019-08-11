@@ -2,6 +2,7 @@
 title: Preparations
 step: 1
 ---
+
 ## 1.1 Requirements
 
 - [Skyrim Special Edition](http://store.steampowered.com/app/489830/The_Elder_Scrolls_V_Skyrim_Special_Edition/) from Steam (updated to the latest version)
@@ -46,13 +47,13 @@ Throughout the guide I will refer to this folder as `{Your Modding Folder}`.
 
 Over the course of the guide there are some short procedures you will have to repeat for a sizeable amount of mods. They are quite short and typically done within a few minutes at the most. After completing them a few times, you will most likely memorise them and learn to quickly do them on your own. Until then you can click the badges for detailed instructions.
 
-| Badge                                                        | Instruction                                                  |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| <a href="https://prototype.thephoenixflavour.com/instructions/resave_plugin" class="badge badge-primary">Resave Example.esp</a> | Open the specified plugin in the Creation Kit and save it there. |
-| <a href="https://prototype.thephoenixflavour.com/instructions/unpack_bsa" class="badge badge-info">Unpack Example.bsa</a> | Use MO2 to quickly unpack the specified archive.             |
-| <a href="https://prototype.thephoenixflavour.com/instructions/optimise_assets" class="badge badge-success">Optimize Assets</a> | Run the loose assets of the mod through Cathedral Asset Optimizer. |
-| <a href="https://prototype.thephoenixflavour.com/instructions/clean_plugin" class="badge badge-danger">Clean Example.esp</a> | Quickly clean the specified plugin with xEdit.               |
-| <a href="https://prototype.thephoenixflavour.com/instructions/manual_download" class="badge badge-warning">Manual Download</a> | Download mod files manually (typically because of the file size). |
+| Badge                                                                                                                              | Instruction                                                             |
+| ---------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| <a href="https://prototype.thephoenixflavour.com/instructions/resave_plugin" class="badge badge-primary">Resave Example.esp</a>    | Open the specified plugin in the Creation Kit and save it there.        |
+| <a href="https://prototype.thephoenixflavour.com/instructions/unpack_bsa" class="badge badge-info">Unpack Example.bsa</a>          | Use MO2 to quickly unpack the specified archive.                        |
+| <a href="https://prototype.thephoenixflavour.com/instructions/optimise_assets" class="badge badge-success">Optimize Assets</a>     | Run the loose assets of the mod through Cathedral Asset Optimizer.      |
+| <a href="https://prototype.thephoenixflavour.com/instructions/clean_plugin" class="badge badge-danger">Clean Example.esp</a>       | Quickly clean the specified plugin with xEdit.                          |
+| <a href="https://prototype.thephoenixflavour.com/instructions/manual_download" class="badge badge-warning">Manual Download</a>     | Download mod files manually (typically because of the file size).       |
 | <a href="https://prototype.thephoenixflavour.com/instructions/resize_textures" class="badge badge-dark">Resize If > Resolution</a> | Reduce texture resolution to lower than the noted value with Ordenador. |
 
 ## 1.6 Terminology
@@ -60,4 +61,3 @@ Over the course of the guide there are some short procedures you will have to re
 - The **root** folder: `Steam\steamapps\common\Skyrim Special Edition`
 - The **data** folder: `Steam\steamapps\common\Skyrim Special Edition\Data`
 - The **INI** folder: `Documents\My Games\Skyrim Special Edition`
-
