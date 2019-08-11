@@ -1,17 +1,14 @@
 ---
-title: 01. Preparations
-Robots: index, follow
-Template: guide_core
+title: Preparations
+step: 1
 ---
-# STEP 1 - PREPARATIONS
-
 ## 1.1 Requirements
 
 - [Skyrim Special Edition](http://store.steampowered.com/app/489830/The_Elder_Scrolls_V_Skyrim_Special_Edition/) from Steam (updated to the latest version)
 - a legit Windows 7 / 8 / 8.1 / 10 installation (64bit)
 - editing software such as [Notepad++](https://notepad-plus-plus.org/) (recommended Freeware)
 - an archiving tool like [7zip](http://www.7-zip.org/download.html) or [WinRAR](https://www.win-rar.com/start.html?&L=0)
-- the latest drivers for your GPU ([NVIDIA](http://www.nvidia.de/Download/index.aspx) or [AMD](https://support.amd.com/en-us/download))
+- the latest drivers for your GPU ([NVIDIA](http://www.nvidia.com/Download/index.aspx) or [AMD](https://support.amd.com/en-us/download))
 
 ## 1.2 Show File Extension
 

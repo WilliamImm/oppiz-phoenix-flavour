@@ -8,19 +8,22 @@ export default ({ data, pageContext }) => {
   const step = data.markdownRemark
   const { previous, next } = pageContext
 
+  const displayTitle=`${step.frontmatter.step} - ${step.frontmatter.title}`
+
   return (
     <Layout>
-      <SEO title={step.frontmatter.title} />
+      <SEO title={displayTitle} />
+      <h1>Step {displayTitle}</h1>
       <article dangerouslySetInnerHTML={{ __html: step.html }} />
       <ul class="pagniation">
           {previous && (
             <li class="page-item">
-              <Link to={previous.fields.slug} rel="prev">{previous.frontmatter.title}</Link>
+              <Link to={previous.fields.slug} rel="prev">{previous.frontmatter.step} - {previous.frontmatter.title}</Link>
             </li>
           )}
           {next && (
             <li class="page-item">
-              <Link to={next.fields.slug} rel="next">{next.frontmatter.title}</Link>
+              <Link to={next.fields.slug} rel="next">{next.frontmatter.step} - {next.frontmatter.title}</Link>
             </li>
           )}
       </ul>
@@ -33,6 +36,7 @@ export const query = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
+        step
         title
       }
     }

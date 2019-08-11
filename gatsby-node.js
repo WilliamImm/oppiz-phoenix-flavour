@@ -25,13 +25,14 @@ exports.createPages = async ({ graphql, actions }) => {
   // We want slug (link to where page is), plus the title (for displaying on previous/next pages)
   const result = await graphql(`
     {
-      allMarkdownRemark(sort: {fields: frontmatter___title}) {
+      allMarkdownRemark(sort: {fields: frontmatter___step}) {
         edges {
           node {
             fields {
               slug
             }
             frontmatter {
+              step
               title
             }
           }
