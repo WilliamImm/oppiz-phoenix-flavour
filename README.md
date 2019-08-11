@@ -4,4 +4,8 @@ Oppiz is a refreshed, custom static site for Shadea/Phoenix's "The Phoenix Flavo
 
 ## Progress
 
-Currently none yet. This is just the Gatsby starter site at this point. First goal is to implement the Markdown generated pages - minimum viable product would be something that renders renders Phoenix's existing content w/o hiccups.
+The site is able to render guide steps in an orderly fashion, though content has not been fully converted to use the new format. Layout & site design will need to be worked on, as well as a proper index/landing page.
+
+Would like to implement a sidebar for the guide steps, as well as implement a FOMOD installation gallery. Plus would need to design for multiple modules.
+
+That being said, this is most certainly possible.
