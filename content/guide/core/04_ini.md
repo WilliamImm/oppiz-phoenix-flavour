@@ -1,7 +1,6 @@
 ---
 title: 04. INI Files
-Robots: index, follow
-Template: guide_core
+step: 4
 ---
 
 # STEP 4 - INI FILES

@@ -1,7 +1,6 @@
 ---
 title: 01. Preparations
-Robots: index, follow
-Template: guide_core
+step: 1
 ---
 # STEP 1 - PREPARATIONS
 

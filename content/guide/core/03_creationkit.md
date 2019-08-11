@@ -1,7 +1,6 @@
 ---
 title: 03. The Creation Kit
-Robots: index, follow
-Template: guide_core
+step: 3
 ---
 # STEP 3 - THE CREATION KIT
 

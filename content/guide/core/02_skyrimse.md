@@ -1,7 +1,6 @@
 ---
 title: 02. Skyrim SE
-Robots: index, follow
-Template: guide_core
+step: 2
 ---
 # STEP 2 - SKYRIM SE
 
