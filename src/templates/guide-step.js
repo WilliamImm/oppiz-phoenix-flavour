@@ -18,17 +18,17 @@ class GuideStepTemplate extends React.Component {
         <SEO title={displayTitle} />
         <h1>STEP {displayTitle.toUpperCase()}</h1>
         <article dangerouslySetInnerHTML={{ __html: step.html }} />
-        <ul className="pagniation">
+        <ul className="pagination">
           {previous && (
             <li className="page-item">
-              <Link to={previous.fields.slug} rel="prev">
+              <Link to={previous.fields.slug} rel="prev" className="page-link">
                 {previous.frontmatter.step} - {previous.frontmatter.title}
               </Link>
             </li>
           )}
           {next && (
             <li className="page-item">
-              <Link to={next.fields.slug} rel="next">
+              <Link to={next.fields.slug} rel="next" className="page-link">
                 {next.frontmatter.step} - {next.frontmatter.title}
               </Link>
             </li>
