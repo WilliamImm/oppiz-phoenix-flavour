@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import { Luminous } from "luminous-lightbox"
+import Pagination from "react-bootstrap/Pagination"
 
 class GuideStepTemplate extends React.Component {
   render() {
@@ -18,22 +19,22 @@ class GuideStepTemplate extends React.Component {
         <SEO title={displayTitle} />
         <h1>STEP {displayTitle.toUpperCase()}</h1>
         <article dangerouslySetInnerHTML={{ __html: step.html }} />
-        <ul className="pagination">
+        <Pagination>
           {previous && (
-            <li className="page-item">
-              <Link to={previous.fields.slug} rel="prev" className="page-link">
+            <Pagination.Item>
+              <Link to={previous.fields.slug} rel="prev">
                 {previous.frontmatter.step} - {previous.frontmatter.title}
               </Link>
-            </li>
+            </Pagination.Item>
           )}
           {next && (
-            <li className="page-item">
-              <Link to={next.fields.slug} rel="next" className="page-link">
+            <Pagination.Item>
+              <Link to={next.fields.slug} rel="next">
                 {next.frontmatter.step} - {next.frontmatter.title}
               </Link>
-            </li>
+            </Pagination.Item>
           )}
-        </ul>
+        </Pagination>
       </Layout>
     )
   }
