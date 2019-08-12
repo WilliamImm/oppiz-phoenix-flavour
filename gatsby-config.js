@@ -42,5 +42,11 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        precision: 6,
+      }
+    },
   ],
 }
