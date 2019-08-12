@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
+import "./layout.sass"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBook, faCode } from "@fortawesome/free-solid-svg-icons"
