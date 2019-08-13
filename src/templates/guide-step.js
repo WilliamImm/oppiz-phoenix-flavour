@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 
 import { Luminous } from "luminous-lightbox"
 import Pagination from "react-bootstrap/Pagination"
+import GatsbyPageItem from "../components/GatsbyPageItem"
 
 class GuideStepTemplate extends React.Component {
   render() {
@@ -21,21 +22,17 @@ class GuideStepTemplate extends React.Component {
         <article dangerouslySetInnerHTML={{ __html: step.html }} />
         <Pagination>
           {previous && (
-            <Pagination.Item>
-              <Link to={previous.fields.slug} rel="prev">
-                {previous.frontmatter.step} - {previous.frontmatter.title}
-              </Link>
-            </Pagination.Item>
+            <GatsbyPageItem to={previous.fields.slug}>
+              {previous.frontmatter.step} - {previous.frontmatter.title}
+            </GatsbyPageItem>
           )}
-          <Pagination.Item active>
+          <GatsbyPageItem active>
               {step.frontmatter.step} - {step.frontmatter.title}
-          </Pagination.Item>
+          </GatsbyPageItem>
           {next && (
-            <Pagination.Item>
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.step} - {next.frontmatter.title}
-              </Link>
-            </Pagination.Item>
+            <GatsbyPageItem to={next.fields.slug}>
+              {next.frontmatter.step} - {next.frontmatter.title}
+            </GatsbyPageItem>
           )}
         </Pagination>
       </Layout>
