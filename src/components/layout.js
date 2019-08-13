@@ -12,6 +12,9 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "./layout.css"
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faBook, faCode } from "@fortawesome/free-solid-svg-icons"
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -36,7 +39,8 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()} Phoenix. All rights reserved.
+            © {new Date().getFullYear()} The Phoenix Flavour. All rights reserved.<br/>
+            <FontAwesomeIcon icon={faBook} /> by Phoenix, <FontAwesomeIcon icon={faCode} /> by WilliamImm.
         </footer>
       </div>
     </>
