@@ -27,6 +27,9 @@ class GuideStepTemplate extends React.Component {
               </Link>
             </Pagination.Item>
           )}
+          <Pagination.Item active>
+              {step.frontmatter.step} - {step.frontmatter.title}
+          </Pagination.Item>
           {next && (
             <Pagination.Item>
               <Link to={next.fields.slug} rel="next">
