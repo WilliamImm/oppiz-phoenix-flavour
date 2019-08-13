@@ -4,6 +4,7 @@ import classNames from "classnames"
 import PropTypes from "prop-types"
 import React from "react"
 import { Link } from "gatsby"
+import SafeAnchor from "react-bootstrap/SafeAnchor"
 
 const propTypes = {
   /** Disables the PageItem */
@@ -28,16 +29,24 @@ export default function GatsbyPageItem({
   className,
   style,
   activeLabel,
+  to,
   children,
   ...props
 }) {
-  const Component = active || disabled ? 'span' : Link
+  let Component;
+  if (active || disabled) {
+    Component = 'span'
+  } else if (!to) {
+    Component = SafeAnchor
+  } else {
+    Component = Link
+  }
   return (
     <li
       style={style}
       className={classNames(className, 'page-item', { active, disabled })}
     >
-      <Component className="page-link" disabled={disabled} {...props}>
+      <Component className="page-link" disabled={disabled} to={to} {...props}>
         {children}
         {active && activeLabel && (
           <span className="sr-only">{activeLabel}</span>
