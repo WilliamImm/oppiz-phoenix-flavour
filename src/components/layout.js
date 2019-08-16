@@ -16,7 +16,7 @@ import Navbar from "react-bootstrap/Navbar"
 
 import Header from "./header"
 import "./layout.css"
-import "./layout.sass"
+import "./layout.scss"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBook, faCode } from "@fortawesome/free-solid-svg-icons"
