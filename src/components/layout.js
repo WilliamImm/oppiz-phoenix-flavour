@@ -15,7 +15,7 @@ import Col from "react-bootstrap/Col"
 import Navbar from "react-bootstrap/Navbar"
 
 import Header from "./header"
-import "./layout.css"
+// import "./layout.css"
 import "./layout.scss"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -33,26 +33,29 @@ const Layout = ({ children }) => {
   `)
 
   return (
-  <div>
-    <Navbar expand="lg">
-      <Container>
+    <div>
+      <Navbar>
         <Header siteTitle={data.site.siteMetadata.title} />
+      </Navbar>
+      <Container>
+        <Row>
+          <Col>
+            <main>{children}</main>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <footer>
+              © {new Date().getFullYear()} The Phoenix Flavour. All rights
+              reserved.
+              <br />
+              <FontAwesomeIcon icon={faBook} /> by Phoenix,{" "}
+              <FontAwesomeIcon icon={faCode} /> by WilliamImm.
+            </footer>
+          </Col>
+        </Row>
       </Container>
-    </Navbar> 
-    <Container>
-      <Row>
-        <Col><main>{children}</main></Col>
-      </Row>
-      <Row>
-        <Col>
-          <footer>
-            © {new Date().getFullYear()} The Phoenix Flavour. All rights reserved.<br/>
-            <FontAwesomeIcon icon={faBook} /> by Phoenix, <FontAwesomeIcon icon={faCode} /> by WilliamImm.
-          </footer>
-        </Col>
-      </Row>
-    </Container>
-  </div>
+    </div>
   )
 }
 

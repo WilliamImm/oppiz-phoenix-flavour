@@ -1,0 +1,32 @@
+h1 {
+  color: #fff;
+}
+
+h4 {
+  color: #a3e1ff;
+}
+
+.landing {
+  background:
+    /* top, overlay color */ linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    /* bottom, image */ url(../images/052-Silver-City-.jpg);
+  background-size: 100% 120%;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+  text-align: center;
+
+  * {
+    margin: 10px;
+  }
+}
+
+.get-started {
+  width: 25%;
+}
