@@ -1,10 +1,15 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import rehypeReact from "rehype-react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import { Luminous } from "luminous-lightbox"
+
+const renderAst = new rehypeReact({
+  createElement: React.createElement,
+}).Compiler
 
 class GuideStepTemplate extends React.Component {
   render() {
@@ -18,7 +23,9 @@ class GuideStepTemplate extends React.Component {
         <SEO title={displayTitle} />
         <h1>STEP {displayTitle.toUpperCase()}</h1>
         <nav dangerouslySetInnerHTML={{ __html: step.tableOfContents}} id="tocLinks" />
-        <article dangerouslySetInnerHTML={{ __html: step.html }} />
+        <article>
+          {renderAst(step.htmlAst)}
+        </article>
         <ul className="pagniation">
           {previous && (
             <li className="page-item">
@@ -52,7 +59,7 @@ export default GuideStepTemplate
 export const query = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
+      htmlAst
       frontmatter {
         step
         title
