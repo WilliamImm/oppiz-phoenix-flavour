@@ -2,6 +2,8 @@
 
 Oppiz is a refreshed, custom static site for Shadea/Phoenix's "The Phoenix Flavour", a Skyrim Special Edition modding guide with a focus on modularity. This is intended to replace the aging and limited Wordpress site that was used for previous editions of the guide.
 
+This project is discontinued in favor of using STEP's enhanced mod guide CMS, but it is kept for public record and interest.
+
 ## Progress
 
 The site is able to render guide steps in an orderly fashion, though content has not been fully converted to use the new format. Layout & site design will need to be worked on, as well as a proper index/landing page.
