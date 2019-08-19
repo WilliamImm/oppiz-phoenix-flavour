@@ -25,7 +25,12 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [`gatsby-remark-images`, `gatsby-remark-copy-linked-files`, `gatsby-remark-autolink-headers`],
+        plugins: [
+          `gatsby-remark-smartypants`,
+          `gatsby-remark-images`,
+          `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-autolink-headers`,
+        ],
       },
     },
     `gatsby-plugin-sharp`,

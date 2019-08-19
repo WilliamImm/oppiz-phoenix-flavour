@@ -13,7 +13,8 @@ step: 1
 
 ## 1.2 Show File Extension
 
-By default file extensions - like EXE, PNG or ESP - are hidden in the Windows Explorer. Since it's fairly important to be able to see them during the installation of the guide, I recommend double-checking that you have file extensions set to visible.
+By default file extensions -- like EXE, PNG or ESP -- are hidden in the Windows Explorer. Since it's fairly important to be able to see them during the installation of the guide, I recommend double-checking that you have file extensions set to visible.
+
 
 - Open the Windows Explorer.
 - Click the **View** tab at the top.
