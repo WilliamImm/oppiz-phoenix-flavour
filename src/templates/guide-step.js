@@ -17,6 +17,7 @@ class GuideStepTemplate extends React.Component {
       <Layout>
         <SEO title={displayTitle} />
         <h1>STEP {displayTitle.toUpperCase()}</h1>
+        <nav dangerouslySetInnerHTML={{ __html: step.tableOfContents}} id="tocLinks" />
         <article dangerouslySetInnerHTML={{ __html: step.html }} />
         <ul className="pagniation">
           {previous && (
@@ -56,6 +57,7 @@ export const query = graphql`
         step
         title
       }
+      tableOfContents
     }
   }
 `
