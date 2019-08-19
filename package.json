@@ -1,6 +1,5 @@
 {
   "name": "oppiz-phoenix-flavour",
-  "private": true,
   "description": "A Skyrim SE modding guide",
   "version": "0.1.0",
   "author": "Shadea/Phoenix (guide), WilliamImm (code)",
@@ -34,7 +33,7 @@
   "keywords": [
     "gatsby"
   ],
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
