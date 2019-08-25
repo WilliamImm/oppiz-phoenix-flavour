@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
   `)
 
   return (
-  <div>
+  <>
     <Navbar expand="lg">
       <Container>
         <Header siteTitle={data.site.siteMetadata.title} />
@@ -52,7 +52,7 @@ const Layout = ({ children }) => {
         </Col>
       </Row>
     </Container>
-  </div>
+  </>
   )
 }
 
