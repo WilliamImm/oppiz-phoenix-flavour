@@ -25,6 +25,14 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       value: module,
     })
   }
+  if (node.internal.type === `Mdx`) {
+    const slug = createFilePath({ node, getNode, basePath: `content` })
+    createNodeField({
+      node,
+      name: "slug",
+      value: slug,
+    })
+  }
 }
 // Now actually create the pages
 exports.createPages = async ({ graphql, actions }) => {
@@ -89,6 +97,33 @@ exports.createPages = async ({ graphql, actions }) => {
         slug: step.node.fields.slug,
         previous,
         next,
+      },
+    })
+  })
+
+  // Now do same for MDX
+  const mdxResult = await graphql(`
+    {
+      allMdx {
+        edges {
+          node {
+            id
+            fields {
+              slug
+            }
+          }
+        }
+      }
+    }
+  `)
+  const mdxSteps =  mdxResult.data.allMdx.edges;
+  mdxSteps.forEach(({ node }, index) => {
+    createPage({
+      path: node.fields.slug,
+      component: path.resolve(`./src/components/mdx-layout.js`),
+      context: {
+        id: node.id,
+        slug: node.fields.slug
       },
     })
   })

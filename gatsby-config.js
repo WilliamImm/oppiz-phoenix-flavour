@@ -33,6 +33,17 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        gatsbyRemarkPlugins: [
+          `gatsby-remark-smartypants`,
+          `gatsby-remark-images`,
+          `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-autolink-headers`,
+        ],
+      },
+    },
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
