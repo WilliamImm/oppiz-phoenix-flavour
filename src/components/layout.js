@@ -13,7 +13,10 @@ import Header from "./header"
 import "./layout.css"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBook, faCode } from "@fortawesome/free-solid-svg-icons"
+import { library } from "@fortawesome/fontawesome-svg-core"
+import { faBook, faCode, faDragon } from "@fortawesome/free-solid-svg-icons"
+
+library.add(faBook, faCode, faDragon)
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -40,7 +43,7 @@ const Layout = ({ children }) => {
         <main>{children}</main>
         <footer>
             © {new Date().getFullYear()} The Phoenix Flavour. All rights reserved.<br/>
-            <FontAwesomeIcon icon={faBook} /> by Phoenix, <FontAwesomeIcon icon={faCode} /> by WilliamImm.
+            <FontAwesomeIcon icon="book" /> by Phoenix, <FontAwesomeIcon icon="code" /> by WilliamImm.
         </footer>
       </div>
     </>
