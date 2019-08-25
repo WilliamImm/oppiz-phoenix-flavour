@@ -4,4 +4,4 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 
-require("luminous-lightbox/dist/luminous-basic.css")
+import("luminous-lightbox/dist/luminous-basic.css")
